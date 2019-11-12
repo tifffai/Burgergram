@@ -16,7 +16,9 @@
     <% @burgers.each do |burger| %>
       <tr>
         <td><%= burger.name %></td>
+
         <td><%= burger.drool %></td>
+        
         <td><%= burger.description %></td>
         <td><%= link_to 'Show', burger %></td>
         <td><%= link_to 'Edit', edit_burger_path(burger) %></td>
